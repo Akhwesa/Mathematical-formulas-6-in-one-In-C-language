@@ -12,6 +12,7 @@ int main()
 	printf("3.\t Volume of a Sphere\n");
 	printf("4.\t Volume of a cube\n");
 	printf("5.\t Area of a Triangle\n");
+	printf("6.\t Quadratic equations\n");
 	printf("---------------------------\n");
 	printf("Enter Number of ur Choice \n");
 	
@@ -80,6 +81,18 @@ int main()
 		scanf("%f", &h);
 		area = 0.5 * b * h;
 		printf("The Area of Triangle is:%f", area);
+	}
+	//Quadratic equations
+	else if ( choice == 6)
+	{
+	float a,b,c, x1, x2, x, sq;
+	printf("Enter values for a, b, c as co-efficient of the Quadratic equation.\n");
+	scanf("%f%f%f",&a,&b,&c);
+	x = b*b - 4*a*c;
+	sq = sqrt(x);
+	x1 = (-b+sq)/(2*a);
+	x2 = (-b-sq)/(2*a);
+	printf("\nAnswer is: %f or %f", x1, x2);
 	}
 	else 
 	{
